@@ -7,7 +7,7 @@
 /* Neutral */
     --White: hsl(0, 0%, 100%);
     --Light-Grey: hsl(217, 12%, 63%);
-    --Medium-Grey: hsl(214, 10%, 31%);
+    --Medium-Grey: hsl(215, 11%, 22%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
 
@@ -50,6 +50,8 @@ body {
 .rating-state__img-cont, 
 .rating-state__number{
     background-color: var(--Medium-Grey);
+    color: var(--White);
+    font-family: var(--Overpass);
     border: none;
     width: 40px;
     height: 40px;
@@ -155,18 +157,21 @@ body {
 /* Desktop */
 
 @media only screen and (min-width: 600px) {
-    .rating-state, .thanks-state {
+    .rating-state, 
+    .thanks-state {
         width: 412px;
         height: 412px;
         padding: 34px;
     }
 
-    .rating-state__img-cont, .rating-state__number {
+    .rating-state__img-cont, 
+    .rating-state__number {
         width: 50px;
         height: 50px;
     }
 
-    .rating-state__title, .thanks-state__title {
+    .rating-state__title, 
+    .thanks-state__title {
         font-size: var(--fs-28);
     }
 
